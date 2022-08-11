@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  color: #F2F2F2;
+}
+
+#imgMake {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+}
+
+#imgMakeUp {
+  margin-top: 3%;
+  width: 30%;
+  height: auto;
+}
+
+#imgProximamente {
+  width: 70%;
+  height: auto;
+}
+
+#texto {
+  margin-top: 5%;
+  color: #F2F2F2;
+  font-family: "Poppins", sans-serif;
+}
+
+#redes {
+  font-size: 25px;
+}
+
+#formulario {
+  margin-top: 2%;
+}
+#formulario #btnEnviar {
+  margin-left: 2%; 
+  width: 30%;
+  border: none;
+  border-radius: 50px;
+  background: #FCD085;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+#formulario #datos {
+  width: 80%;
+}
+#formulario #datos:focus {
+  border-color: rgb(252, 208, 133);
+  box-shadow: 0 1px 1px rgba(252, 208, 133, 0.075) inset, 0 0 8px rgba(252, 208, 133, 0.6);
+  outline: 0 none;
+}
+
+#footer {
+  margin-top: 3%;
+}
+
+a:link {
+  color: #F2F2F2;
+}
+
+a:visited {
+  color: #F2F2F2;
+}
+
+a:active {
+  color: #F2F2F2;
+}
+
+a:hover {
+  color: #F2F2F2;
+}
+
+#panel {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  z-index: -10;
+}
+
+canvas {
+  width: 100%;
+}
+
+#btnPlay {
+  border: none;
+  background: none;
+  color: #F2F2F2;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 400px) {
+  #formDatos {
+    display: block;
+  }
+  #datos {
+    width: 100%;
+  }
+  #btnEnviar {
+    margin-top: 3%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=mantenimiento.css.map */
