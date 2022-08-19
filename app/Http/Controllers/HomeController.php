@@ -22,5 +22,11 @@ class HomeController extends Controller
         );
         return response()->json($data);
     }
+    public function inicio(){
+        return view('home.inicio');
+    }
+    public function registro(){
+        return view('home.registro');
+    }
 }
  
