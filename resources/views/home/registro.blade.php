@@ -1,171 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="robots" content="" />
-	<meta name="description" content="BeautyZone : Beauty Spa Salon HTML Template" />
-	<meta property="og:title" content="BeautyZone : Beauty Spa Salon HTML Template" />
-	<meta property="og:description" content="BeautyZone : Beauty Spa Salon HTML Template" />
-	<meta property="og:image" content="https://beautyzone.dexignzone.com/xhtml/social-image.png"/>
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
-	<!-- PAGE TITLE HERE -->
-	<title>Andromeda</title>
-	
-	<!-- MOBILE SPECIFIC -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.min.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/css/plugins.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/css/style.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/css/templete.min.css')}}">
-	<link class="skin" rel="stylesheet" type="text/css" href="{{asset('andromeda/css/skin/skin-2.css')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Betler Multipurpose Forms HTML Template">
+    <meta name="author" content="Ansonika">
+    <title>Betler | Multipurpose Forms HTML Template</title>
+ 
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="{{asset('registro/img/apple-touch-icon-57x57-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{{asset('registro/img/apple-touch-icon-72x72-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{{asset('registro/img/apple-touch-icon-114x114-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{{asset('registro/img/apple-touch-icon-144x144-precomposed.png')}}">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS --> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 </head>
-<body id="bg">
-<div class="page-wraper">
-<div id="loading-area"></div>
-    <!-- header -->
-    <header class="site-header header center mo-left">
-		<div class="top-bar bg-primary text-white">
-			<div class="container">
-				<div class="row d-flex justify-content-between">
-					<div class="dlab-topbar-left">
-						<ul>
-							<li><i class="fa fa-phone m-r5"></i> Lorem, ipsum dolor.</li>
-							<li><i class="fa fa-map-marker m-r5"></i> Lorem ipsum dolor sit amet.</li>
-						</ul>
-					</div>
-					<div class="dlab-topbar-right topbar-social">
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/" class="site-button-link facebook  hover"><i class="fa fa-facebook"></i></a></li>
-							<li><a target="_blank" href="https://www.instagram.com/" class="site-button-link instagram hover"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div class="container-fluid">
+	    <div class="row row-height">
+	        <div class="col-lg-6 background-image p-0" data-background="url(img/main_bg_4.jpg)">
+	            <div class="content-left-wrapper opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+	                <a href="#0" id="logo"><img src="img/logo.svg" alt="" width="46" height="40"></a>
+	                <div id="social">
+	                    <ul>
+	                        <li><a href="#0"><i class="social_facebook"></i></a></li>
+	                        <li><a href="#0"><i class="social_twitter"></i></a></li>
+	                        <li><a href="#0"><i class="social_instagram"></i></a></li>
+	                    </ul>
+	                </div>
+	                <!-- /social -->
+	                <div>
+	                    <h1>Betler Contact Form</h1>
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	                    <a href="https://www.youtube.com/watch?v=3yQmBLeOc7A" class="btn_1 rounded pulse_bt plus_icon btn_play">Play Video Intro<i class="arrow_triangle-right"></i></a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-lg-6 d-flex flex-column content-right">
+	            <div class="container my-auto py-5">
+	                <div class="row">
+	                    <div class="col-lg-9 col-xl-7 mx-auto">
+	                        <h4 class="mb-3">Contact Us</h4>
+	                        <form class="input_style_1" method="post">
+	                        	<div class="form-group">
+	                                <label for="full_name">Full Name</label>
+	                                <input type="text" name="full_name" id="full_name" class="form-control">
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="email_address">Email Address</label>
+	                                <input type="email" name="email_address" id="email_address" class="form-control">
+	                            </div>
+	                            <div class="form-group">
+	                            	<label for="message_field">Message</label>
+	                            	<textarea name="message_field" id="message_field" class="form-control" style="height: 150px"></textarea>
+	                            </div>
+	                            <div class="form-group terms mb-4">
+								    <label class="container_check">I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and Privacy Policy</a>.
+								        <input type="checkbox" name="agree" id="agree">
+								        <span class="checkmark"></span>
+								    </label>
+								</div>
+	                            <button type="submit" class="btn_1 full-width">Submit</button>
+	                        </form>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container pb-3 copy">© Betler - All Rights Reserved.</div>
+	        </div>
+	    </div>
+	    <!-- /row -->
+	</div>
+	<!-- /container -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
+			<!-- /.modal-content -->
 		</div>
-		<!-- main header -->
-        <div class="sticky-header main-bar-wraper navbar-expand-lg">
-            <div class="main-bar clearfix ">
-                <div class="container clearfix">
-                    <!-- website logo -->
-                    <div class="logo-header mostion">
-						<a href="index.html" class="dez-page"><img src="images/logo-black.png" alt=""></a>
-					</div>
-                    <!-- nav toggle button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-                    <!-- main nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-between" id="navbarNavDropdown">
-						<ul class="nav navbar-nav">
-							<li><a href="javascript:void(0);">Inicio</a></li>
-							<li><a href="javascript:void(0);">Nosotros</a></li>
-							<li><a href="javascript:void(0);">Tienda</a></li>
-						</ul>		
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- main header END -->
-    </header>
-    <!-- header END -->
-    <!-- Content -->
-    <div class="page-content bg-white">
-        <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-primary bg-pt" style="background-image:url({{asset('andromeda/images/banner/bnr2.jpg')}});">
-            <div class="container">
-                <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">Register</h1>
-					<!-- Breadcrumb row -->
-					<div class="breadcrumb-row">
-						<ul class="list-inline">
-							<li><a href="index.html">Home</a></li>
-							<li>Register</li>
-						</ul>
-					</div>
-					<!-- Breadcrumb row END -->
-                </div>
-            </div>
-        </div>
-        <!-- inner page banner END -->
-        <!-- contact area -->
-        <div class="section-full content-inner shop-account">
-            <!-- Product -->
-            <div class="container">
-                <div class="row">
-					<div class="col-md-12 text-center">
-						<h3 class="font-weight-700 m-t0 m-b20">Registrarse</h3>
-					</div>
-				</div>
-                <div class="row">
-					<div class="col-md-12 m-b30">
-						<div class="p-a30 border-1  max-w500 m-auto">
-							<div class="tab-content">
-								<form id="login" class="tab-pane active">
-									<h4 class="font-weight-700">INFORMACIÓN PERSONAL</h4>
-									<div class="form-group">
-										<label class="font-weight-700">Nombre *</label>
-										<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">
-									</div>
-									<div class="form-group">
-										<label class="font-weight-700">Apellidos *</label>
-										<input name="dzName" required="" class="form-control" placeholder="Last Name" type="text">
-									</div>
-									<div class="form-group">
-										<label class="font-weight-700">E-MAIL *</label>
-										<input name="dzName" required="" class="form-control" placeholder="Your Email Id" type="email">
-									</div>
-									<div class="form-group">
-										<label class="font-weight-700">CONTRASEÑA *</label>
-										<input name="dzName" required="" class="form-control " placeholder="Type Password" type="password">
-									</div>
-									<div class="text-left">
-										<button class="site-button button-lg radius-no outline outline-2">REGISTRAR</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-            <!-- Product END -->
-		</div>
-        <!-- contact area  END -->
-    </div>
-    
-</div>
-<!-- JAVASCRIPT FILES ========================================= -->
-<script src="{{asset('andromeda/js/jquery.min.js')}}"></script><!-- JQUERY.MIN JS -->
-<script src="{{asset('andromeda/plugins/wow/wow.js')}}"></script><!-- WOW JS -->
-<script src="{{asset('andromeda/plugins/bootstrap/js/popper.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="{{asset('andromeda/plugins/bootstrap/js/bootstrap.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="{{asset('andromeda/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script><!-- FORM JS -->
-<script src="{{asset('andromeda/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js')}}"></script><!-- FORM JS -->
-<script src="{{asset('andromeda/plugins/magnific-popup/magnific-popup.js')}}"></script><!-- MAGNIFIC POPUP JS -->
-<script src="{{asset('andromeda/plugins/counter/waypoints-min.js')}}"></script><!-- WAYPOINTS JS -->
-<script src="{{asset('andromeda/plugins/counter/counterup.min.js')}}"></script><!-- COUNTERUP JS -->
-<script src="{{asset('andromeda/plugins/imagesloaded/imagesloaded.js')}}"></script><!-- IMAGESLOADED -->
-<script src="{{asset('andromeda/plugins/masonry/masonry-3.1.4.js')}}"></script><!-- MASONRY -->
-<script src="{{asset('andromeda/plugins/masonry/masonry.filter.js')}}"></script><!-- MASONRY -->
-<script src="{{asset('andromeda/plugins/owl-carousel/owl.carousel.js')}}"></script><!-- OWL SLIDER -->
-<script src="{{asset('andromeda/plugins/rangeslider/rangeslider.js')}}" ></script><!-- Rangeslider -->
-<script src="{{asset('andromeda/js/custom.min.js')}}"></script><!-- CUSTOM FUCTIONS  -->
-<script src="{{asset('andromeda/js/dz.carousel.min.js')}}"></script><!-- SORTCODE FUCTIONS  -->
-<script src="{{asset('andromeda/js/dz.ajax.js')}}"></script><!-- CONTACT JS  -->
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="{{asset('registro/js/common_scripts.js')}}'"></script>
+	<script src="{{asset('registro/js/common_func.js')}}'"></script>
+
 </body>
 </html>

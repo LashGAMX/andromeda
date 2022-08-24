@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Andromeda </title>
+	<title>BeautyZone : Beauty Spa Salon HTML Template </title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +34,8 @@
 	<link class="skin" rel="stylesheet" type="text/css" href="{{asset('andromeda/css/skin/skin-2.css')}}">
 	<!-- Revolution Slider Css -->
 	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/plugins/revolution/revolution/css/layers.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/plugins/revolution/revolution/css/navigation.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/plugins/revolution/revolution/css/settings.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('andromeda/plugins/revolution/revolution/css/navigation.css')}}">
 	<!-- Revolution Navigation Style -->
 </head>
 <body id="bg">
@@ -60,11 +60,10 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">	
-							<li class="active"><a href="javascript:void(0);">Home</a></li>
-							<li><a href="javascript:void(0);">Pagina </a></li>
-							<li><a href="javascript:void(0);">Nuestros servicios </a></li>
+							<li class="active"><a href="javascript:void(0);">Home </a></li>
+							<li><a href="javascript:void(0);">Nosotros </a></li>
 							<li><a href="javascript:void(0);">Blog </a></li>
-							<li><a href="javascript:void(0);">Tienda </a></li>
+							<li><a href="javascript:void(0);">Contacto </a></li>
 						</ul>
                     </div>
                 </div>
@@ -83,7 +82,7 @@
 				<ul>	<!-- SLIDE  -->
 					<li data-index="rs-100" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 						<!-- MAIN IMAGE -->
-						<img src="images/main-slider/rev-slider/transparent.png" data-bgcolor='#1d2931'' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+						<img src="images/main-slider/rev-slider/transparent.png" data-bgcolor='#1d2931' style='background:#1d2931' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 						<!-- LAYERS -->
 						
 						<!-- LAYER NR. 1 -->
@@ -124,7 +123,7 @@
 							data-paddingright="[0,0,0,0]"
 							data-paddingbottom="[0,0,0,0]"
 							data-paddingleft="[0,0,0,0]"
-							style="z-index: 5;"><img src="images/main-slider/slide5.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> 
+							style="z-index: 5;"><img src="{{asset('andromeda/images/main-slider/slide5.jpg')}}" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> 
 						</div>
 						
 						<!-- LAYER NR. 3 -->
@@ -146,7 +145,7 @@
 							data-paddingbottom="[0,0,0,0]"
 							data-paddingleft="[0,0,0,0]"
 							style="z-index: 6; white-space: nowrap; font-size: 235px; line-height: 240px; font-weight: 500; color: #d7c59d;font-family: 'Rubik', sans-serif;">
-							<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">HAIR</div>
+							<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">ANDRO </div>
 						</div>
 						
 						<!-- LAYER NR. 3 -->
@@ -168,7 +167,7 @@
 							data-paddingbottom="[0,0,0,0]"
 							data-paddingleft="[0,0,0,0]"
 							style="z-index: 12; white-space: nowrap; font-size: 235px; line-height: 240px; font-weight: 500; color: #fff; font-family: 'Rubik', sans-serif;">
-							<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">BEAUTY</div>
+							<div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">MEDA</div>
 						</div>
 						
 						<!-- LAYER NR. 4 -->
@@ -189,7 +188,7 @@
 							data-paddingleft="[0,0,0,0]"
 							style="z-index: 11;">
 							<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%">
-								<img src="images/main-slider/rev-slider/box-bg1.png" alt="" data-ww="['869px','869px','600px','400 px']" data-hh="['919px','919px','635px','420px']" width="407" height="200" data-no-retina> 
+								<img src="{{asset('andromeda/images/main-slider/rev-slider/box-bg1.png')}}" alt="" data-ww="['869px','869px','600px','400 px']" data-hh="['919px','919px','635px','420px']" width="407" height="200" data-no-retina> 
 							</div>
 						</div>
 						<!-- LAYER NR. 4 -->
@@ -210,7 +209,7 @@
 							data-paddingleft="[0,0,0,0]"
 							style="z-index: 12;">
 							<div class="rs-looped rs-wave"  data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%">
-								<img src="images/main-slider/pic-1.png" alt="" data-ww="['724px','724px','600px','360px']" data-hh="['834px','834px','691px','445px']" width="407" height="200" data-no-retina> 
+								<img src="{{asset('andromeda/images/main-slider/pic-1.png')}}" alt="" data-ww="['724px','724px','600px','360px']" data-hh="['834px','834px','691px','445px']" width="407" height="200" data-no-retina> 
 							</div>
 						</div>
 						<!-- LAYER NR. 5 -->
@@ -240,22 +239,22 @@
 		</div>
 		<!-- Slider Banner -->
 		<!-- About Us -->
-		<div class="section-full about-hair-beauty content-inner-1" style="background-image:url(images/background/bg4.png); background-position:top 50px; background-repeat:no-repeat;">
+		<div class="section-full about-hair-beauty content-inner-1" style="background-image:url({{asset('andromeda/images/background/bg4.png')}}); background-position:top 50px; background-repeat:no-repeat;">
 			<div class="container">
 				<div class="row d-flex align-items-center">
 					<div class="col-lg-7 col-md-12 about-hair-content">
-						<h4>Acerca de</h4>
-						<h2 class="text-primary text-uppercase">MakeUp <br/> Fest</h2>
+						<h4>Nosotros</h4>
+						<h2 class="text-primary text-uppercase">Titulo <br/> Titulo </h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						<a href="about-us.html" class="site-button-link line-link black m-b20">Leer más <span></span></a>
 					</div>
 					<div class="col-lg-5 col-md-12">
-						<div class="about-hair-bx" style="background-image:url(images/background/bg3.png); background-position:right bottom; background-repeat:no-repeat;">
+						<div class="about-hair-bx" style="background-image:url({{asset('andromeda/images/background/bg3.png')}}); background-position:right bottom; background-repeat:no-repeat;">
 							<div>
 								<div class="text-black">
-									<h2>Titulo lateral</h2>
-									<h4 class="text-primary">Sub titulo</h4>
-									<a href="booking.html" class="site-button">Leer ahora</a>
+									<h2>Lorem ipsum dolor sit amet.</h2>
+									<h4 class="text-primary">Lorem, ipsum.</h4>
+									<a href="booking.html" class="site-button">lorem</a>
 								</div>
 							</div>
 						</div>
@@ -266,7 +265,7 @@
 						<div class="video-bx">
 							<img src="images/about/video.jpg" alt=""/>
 							<div class="video-play-icon">
-								{{-- <a href="https://www.youtube.com/watch?v=rICXf0UH7Cg" class="popup-youtube video"><i class="ti-control-play"></i></a> --}}
+								<a href="https://www.youtube.com/watch?v=rICXf0UH7Cg" class="popup-youtube video"><i class="ti-control-play"></i></a>
 							</div>
 						</div>
 					</div>
@@ -277,8 +276,8 @@
 		<div class="section-full content-inner-3 hair-srbx" style="background-image:url(images/background/bg5.png); background-position:top 50px;">
 			<div class="container">
 				<div class="section-head hair-head text-center">
-					<h4>Titulo</h4>
-					<h2 class="text-primary text-uppercase">Sub titulo</h2>
+					<h4>Our Services</h4>
+					<h2 class="text-primary text-uppercase">Titulo</h2>
 				</div>
 				<div class="row m-lr0">
 					<div class="col-lg-4 col-md-4 col-sm-6 m-b30">
@@ -290,33 +289,33 @@
 								<h6 class="dlab-tilte-sm">Titulo</h6>
 								<h5 class="dlab-tilte">Sub titulo</h5>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="booking.html" class="site-button white">Leer ahora</a>
+								<a href="booking.html" class="site-button white">lorem</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 m-b30">
-						<div class="icon-bx-wraper hair-service-bx text-center">
+						<div class="icon-bx-wraper hair-service-bx text-center active">
 							<div class="service-images m-b20">
-								<img src="images/our-services/hair/pic1.jpg" alt="">
+								<img src="images/our-services/hair/pic2.jpg" alt="">
 							</div>
 							<div class="icon-content">
 								<h6 class="dlab-tilte-sm">Titulo</h6>
-								<h5 class="dlab-tilte">Sub titulo</h5>
+								<h5 class="dlab-tilte">sub titulo</h5>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="booking.html" class="site-button white">Leer ahora</a>
+								<a href="booking.html" class="site-button white">lorem</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 m-b30">
+					<div class="col-lg-4 col-md-4 col-sm-12 m-b30">
 						<div class="icon-bx-wraper hair-service-bx text-center">
 							<div class="service-images m-b20">
-								<img src="images/our-services/hair/pic1.jpg" alt="">
+								<img src="images/our-services/hair/pic3.jpg" alt="">
 							</div>
 							<div class="icon-content">
-								<h6 class="dlab-tilte-sm">Titulo</h6>
-								<h5 class="dlab-tilte">Sub titulo</h5>
+								<h6 class="dlab-tilte-sm">titulo</h6>
+								<h5 class="dlab-tilte">sub titulo</h5>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="booking.html" class="site-button white">Leer ahora</a>
+								<a href="booking.html" class="site-button white">Lorem</a>
 							</div>
 						</div>
 					</div>
@@ -325,11 +324,11 @@
 		</div>
 		<!-- Our Services -->
 		<!-- Why Chose Us -->
-		<div class="section-full content-inner"  style="background-image:url(images/background/bg4.png); background-position:top 50px;">
+		<div class="section-full content-inner"  style="background-image:url({{asset('andromeda/images/background/bg4.png')}}); background-position:top 50px;">
 			<div class="container">
 				<div class="section-head hair-head text-center">
-					<h4>Titulo</h4>
-					<h2 class="text-primary text-uppercase">sub titulo</h2>
+					<h4>Price Table</h4>
+					<h2 class="text-primary text-uppercase">Titulo</h2>
 				</div>
 				<div class="pricingtable-row hair-membership">
 					<div class="row">
@@ -337,17 +336,17 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title">
-										<h2>Titulo sección</h2>
+										<h2>Sub titulo</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Mes</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> Servicio 1 </li>
-										<li><i class="fa fa-check"></i> Servicio 2</li>
-										<li><i class="fa fa-check"></i> Servicio 3</li>
-										<li><i class="fa fa-check"></i> Servicio 4</li>
-										<li><i class="fa fa-check"></i> Servicio 5</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contactanos</a> </div>
+									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contact Us</a> </div>
 								</div>
 							</div>
 						</div>
@@ -355,17 +354,17 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title bg-primary">
-										<h2>Titulo sección</h2>
+										<h2>Silver Membership</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">Mes</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> Servicio 1</li>
-										<li><i class="fa fa-check"></i> Servicio 2</li>
-										<li><i class="fa fa-check"></i> Servicio 3</li>
-										<li><i class="fa fa-check"></i> Servicio 4</li>
-										<li><i class="fa fa-check"></i> Servicio 5</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contactanos</a> </div>
+									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contact Us</a> </div>
 								</div>
 							</div>
 						</div>
@@ -373,17 +372,17 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title">
-										<h2>Titulo sección</h2>
+										<h2>Gold Membership</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Mes</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$18</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> Servicio 1 </li>
-										<li><i class="fa fa-check"></i> Servicio 2</li>
-										<li><i class="fa fa-check"></i> Servicio 3</li>
-										<li><i class="fa fa-check"></i> Servicio 4</li>
-										<li><i class="fa fa-check"></i> Servicio 5</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contactanos</a> </div>
+									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Lorem</a> </div>
 								</div>
 							</div>
 						</div>
@@ -391,17 +390,17 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title">
-										<h2>Titulo sección</h2>
+										<h2>Luxe Membership</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Mes</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$23</span> <span class="pricingtable-type">Lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> Servicio 1 </li>
-										<li><i class="fa fa-check"></i> Servicio 2</li>
-										<li><i class="fa fa-check"></i> Servicio 3</li>
-										<li><i class="fa fa-check"></i> Servicio 4</li>
-										<li><i class="fa fa-check"></i> Servicio 5</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
+										<li><i class="fa fa-check"></i> Lorem, ipsum.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contactanos</a> </div>
+									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Contact Us</a> </div>
 								</div>
 							</div>
 						</div>
@@ -411,11 +410,11 @@
 		</div>
 		<!-- Why Chose Us End -->
 		<!-- Our Portfolio -->
-		<div class="section-full content-inner blog-hair-bx" style="background-image:url(images/background/bg5.png); background-position:top 50px;">
+		<div class="section-full content-inner blog-hair-bx" style="background-image:url({{asset('andromeda/images/background/bg5.png')}}); background-position:top 50px;">
 			<div class="container">
 				<div class="section-head hair-head text-center">
-					<h4>Titulo</h4>
-					<h2 class="text-primary text-uppercase">Sub titulo</h2>
+					<h4>Our News</h4>
+					<h2 class="text-primary text-uppercase">Lorem</h2>
 				</div>
 				<div class="blog-carousel owl-carousel owl-btn-center-lr owl-btn-3 owl-theme owl-btn-center-lr owl-btn-1">
 					<div class="item">
@@ -424,72 +423,72 @@
 							<div class="dlab-info">
 								 <div class="dlab-post-meta">
 									<ul class="d-flex align-items-center">
-										<li class="post-date">Lorem ipsum dolor sit amet.</li>
-										<li class="post-comment"><a href="blog-details.html">lorem</a> </li>
+										<li class="post-date">Lorem ipsum dolor sit.</li>
+										<li class="post-comment"><a href="blog-details.html">5k</a> </li>
 									</ul>
 								</div>
 								<div class="dlab-post-title ">
-									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h5>
+									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, amet.</a></h5>
 								</div>
 								<div class="dlab-post-readmore blog-share"> 
-									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">Leer más</a>
+									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">lorem</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="blog-post blog-grid blog-style-1">
-							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="images/blog/grid/hair/pic4.jpg" alt=""></a> </div>
+							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="{{asset('andromeda/images/blog/grid/hair/pic3.jpg')}}" alt=""></a> </div>
 							<div class="dlab-info">
 								 <div class="dlab-post-meta">
 									<ul class="d-flex align-items-center">
 										<li class="post-date">Lorem ipsum dolor sit amet.</li>
-										<li class="post-comment"><a href="blog-details.html">lorem</a> </li>
+										<li class="post-comment"><a href="blog-details.html">5k</a> </li>
 									</ul>
 								</div>
 								<div class="dlab-post-title ">
-									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h5>
+									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestiae!</a></h5>
 								</div>
 								<div class="dlab-post-readmore blog-share"> 
-									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">Leer más</a>
+									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">lorem</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="blog-post blog-grid blog-style-1">
-							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="images/blog/grid/hair/pic4.jpg" alt=""></a> </div>
+							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="{{asset('andromeda/images/blog/grid/hair/pic2.jpg')}}" alt=""></a> </div>
 							<div class="dlab-info">
 								 <div class="dlab-post-meta">
 									<ul class="d-flex align-items-center">
 										<li class="post-date">Lorem ipsum dolor sit amet.</li>
-										<li class="post-comment"><a href="blog-details.html">lorem</a> </li>
+										<li class="post-comment"><a href="blog-details.html">5k</a> </li>
 									</ul>
 								</div>
 								<div class="dlab-post-title ">
-									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h5>
+									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!</a></h5>
 								</div>
 								<div class="dlab-post-readmore blog-share"> 
-									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">Leer más</a>
+									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">lorem</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="blog-post blog-grid blog-style-1">
-							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="images/blog/grid/hair/pic4.jpg" alt=""></a> </div>
+							<div class="dlab-post-media dlab-img-effect radius-sm"> <a href="blog-details.html"><img src="{{asset('andromeda/images/blog/grid/hair/pic1.jpg')}}" alt=""></a> </div>
 							<div class="dlab-info">
 								 <div class="dlab-post-meta">
 									<ul class="d-flex align-items-center">
 										<li class="post-date">Lorem ipsum dolor sit amet.</li>
-										<li class="post-comment"><a href="blog-details.html">lorem</a> </li>
+										<li class="post-comment"><a href="blog-details.html">5k</a> </li>
 									</ul>
 								</div>
 								<div class="dlab-post-title ">
-									<h5 class="post-title font-20"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h5>
+									<h5 class="post-title font-20"><a href="blog-details.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, a?</a></h5>
 								</div>
 								<div class="dlab-post-readmore blog-share"> 
-									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">Leer más</a>
+									<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link border-link black">lorem</a>
 								</div>
 							</div>
 						</div>
@@ -506,12 +505,12 @@
             <div class="container">
                 <div class="row">
 					<div class="col-md-12 sub-bx">
-						<h4 class="head-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, facilis.</h4>
+						<h4 class="head-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, amet.</h4>
 						<div class="subscribe-form m-b20">
 							<form class="dzSubscribe" action="script/mailchamp.php" method="post">
 								<div class="dzSubscribeMsg"></div>
 								<div class="input-group">
-									<input name="dzEmail" required="required"  class="form-control" placeholder="Tu correo" type="email">
+									<input name="dzEmail" required="required"  class="form-control" placeholder="Escribe tu correo" type="email">
 									<span class="input-group-btn">
 										<button name="submit" value="Submit" type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
 									</span> 
@@ -520,8 +519,8 @@
 						</div>
 						<ul class="list-inline  text-center">
 							<li><a target="_blank" href="https://www.facebook.com/" class="site-button-link"><i class="fa fa-facebook"></i></a></li>
-							{{-- <li><a target="_blank" href="https://www.google.com/" class="site-button-link"><i class="fa fa-google-plus"></i></a></li> --}}
-							{{-- <li><a target="_blank" href="https://www.linkedin.com/" class="site-button-link"><i class="fa fa-linkedin"></i></a></li> --}}
+							{{-- <li><a target="_blank" href="https://www.google.com/" class="site-button-link"><i class="fa fa-google-plus"></i></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/" class="site-button-link"><i class="fa fa-linkedin"></i></a></li> --}}
 							<li><a target="_blank" href="https://www.instagram.com/" class="site-button-link"><i class="fa fa-instagram"></i></a></li>
 							{{-- <li><a target="_blank" href="https://twitter.com/" class="site-button-link"><i class="fa fa-twitter"></i></a></li> --}}
 						</ul>
@@ -530,36 +529,36 @@
                 <div class="row d-flex align-items-center">
 					<div class="col-xl-4 col-12 col-lg-3 col-md-12 col-sm-12">
                         <div class="footer-logo widget text-center">
-                            <a href="index.html"><img src="images/logo-3.png" alt=""/></a>
+                            <a href="index.html"><img src="{{asset('andromeda/images/logo-3.png')}}" alt=""/></a>
                         </div>
                     </div>
 					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4">
                         <div class="widget">
-                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <h6>Lorem, ipsum.</h6>
                             <ul>
-                                <li>Lorem, ipsum dolor. <br/> Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum. <br/>Lorem, ipsum.</li>
                             </ul>
                         </div>
                     </div>
-					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4">
+					<div class="col-xl-2 col-6 col-lg-3 col-md-3 col-sm-4 footer-col-4">
                         <div class="widget">
-                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <h6>lorem</h6>
                             <ul>
-                                <li>Lorem, ipsum dolor. <br/> Lorem, ipsum dolor.</li>
+                                <li>Lorem ipsum dolor sit.<br/>  Lorem ipsum dolor sit. </li>
                             </ul>
                         </div>
-                    </div>>
-					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4">
+                    </div>
+					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4 footer-col-4">
                         <div class="widget">
-                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <h6>Lorem, ipsum.</h6>
                             <ul>
-                                <li>Lorem, ipsum dolor. <br/> Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum. <br/> Lorem, ipsum.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-12">
                         <div class="widget text-right">
-                            <a href="booking.html" class="site-button radius-no">lorem</a>
+                            <a href="booking.html" class="site-button radius-no">Loreem</a>
                         </div>
                     </div>
                 </div>
@@ -581,16 +580,16 @@
 <script src="{{asset('andromeda/plugins/counter/counterup.min.js')}}"></script><!-- COUNTERUP JS -->
 <script src="{{asset('andromeda/plugins/imagesloaded/imagesloaded.js')}}"></script><!-- IMAGESLOADED -->
 <script src="{{asset('andromeda/plugins/masonry/masonry-3.1.4.js')}}"></script><!-- MASONRY -->
-<script src="{{asset('andromeda/plugins/masonry/masonry.filter.js')}}""></script><!-- MASONRY -->
+<script src="{{asset('andromeda/plugins/masonry/masonry.filter.js')}}"></script><!-- MASONRY -->
 <script src="{{asset('andromeda/plugins/owl-carousel/owl.carousel.js')}}"></script><!-- OWL SLIDER -->
 <script src="{{asset('andromeda/plugins/rangeslider/rangeslider.js')}}" ></script><!-- Rangeslider -->
 <script src="{{asset('andromeda/js/custom.min.js')}}"></script><!-- CUSTOM FUCTIONS  -->
 <script src="{{asset('andromeda/js/dz.carousel.min.js')}}"></script><!-- SORTCODE FUCTIONS  -->
 <script src="{{asset('andromeda/js/dz.ajax.js')}}"></script><!-- CONTACT JS  -->
- <!-- revolution JS FILandromeda/ES -->
-<script src="{{asset('andromeda/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"')}}"></script>
+ <!-- revolution JS FILES -->
+<script src="{{asset('andromeda/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
 <script src="{{asset('andromeda/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-{{-- Lorem, ipsum doloandromeda/r sit amet consectetur adipisicing elit. Accusamus, corrupti? --}}
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
 <script src="{{asset('andromeda/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
 <script src="{{asset('andromeda/plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
 <script src="{{asset('andromeda/plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>

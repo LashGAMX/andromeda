@@ -20,7 +20,7 @@ class HomeController extends Controller
         $data = array(
             'dato'=>$res->texto
         );
-        return response()->json($data);
+        return response()->json($data); 
     }
     public function inicio(){
         return view('home.inicio');
