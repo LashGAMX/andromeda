@@ -10,6 +10,7 @@ Route::post('/sendMailProximamente',[HomeController::class,'sendMailProximamente
 
 Route::get('/inicio',[HomeController::class,'inicio']);
 Route::get('/registro',[HomeController::class,'registro']);
+Route::get('/login',[HomeController::class,'login']);
 
 
 Route::group(['prefix' => 'admin'], function () {
