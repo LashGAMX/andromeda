@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Betler Multipurpose Forms HTML Template">
     <meta name="author" content="Ansonika">
-    <title>Betler | Multipurpose Forms HTML Template</title>
+    <title>Andromeda | registro</title>
  
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,23 +19,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- BASE CSS --> 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/vendors.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{asset('registro/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('registro/css/vendors.css')}}" rel="stylesheet">
+    <link href="{{asset('registro/css/style.css')}}" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="{{asset('registro/css/custom.css')}}" rel="stylesheet">
 </head>
 
 <body>
 	
 	<div id="preloader">
-		<div data-loader="circle-side"></div>
+		<div data-loader="circle-side"></div> 
 	</div><!-- /Preload -->
 	
 	<div class="container-fluid">
 	    <div class="row row-height">
-	        <div class="col-lg-6 background-image p-0" data-background="url(img/main_bg_4.jpg)">
+	        <div class="col-lg-6 background-image p-0" data-background="url({{asset('registro/img/main_bg_4.jpg')}})">
 	            <div class="content-left-wrapper opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
 	                <a href="#0" id="logo"><img src="img/logo.svg" alt="" width="46" height="40"></a>
 	                <div id="social">
@@ -109,7 +109,7 @@
 			<!-- /.modal-content -->
 		</div>
 		<!-- /.modal-dialog -->
-	</div>
+	</div> 
 	<!-- /.modal -->
 	
 	<!-- COMMON SCRIPTS -->
