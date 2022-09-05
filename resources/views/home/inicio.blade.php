@@ -190,18 +190,18 @@
 						{{-- <a href="about-us.html" class="site-button-link line-link black m-b20">Leer más <span></span></a> --}}
 					</div>
 					<div class="col-lg-5 col-md-12">
-						<div class="about-hair-bx" style="background-image:url({{asset('public/andromeda/images/background/bg3.png')}}); background-position:right bottom; background-repeat:no-repeat;">
-							<div>
+						<div class="about-hair-bx" style="background-image:url({{asset('public/img/inicio/principal1.jpg')}}); background-position:right bottom; background-repeat:no-repeat;">
+							{{-- <div>
 								<div class="text-black"> 
 									<h2>Lorem ipsum dolor sit amet.</h2>
 									<h4 class="text-primary">Lorem, ipsum.</h4>
 									<a href="booking.html" class="site-button">lorem</a>
 								</div>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				{{-- <div class="row">
 					<div class="col-md-12">
 						<div class="video-bx">
 							<img src="images/about/video.jpg" alt=""/>
@@ -210,7 +210,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 		<!-- Our Services -->
@@ -218,7 +218,7 @@
 			<div class="container">
 				<div class="section-head hair-head text-center">
 					<h4 id="titulo">Eventos Andrómeda Producciones</h4>
-					<h2 class="text-primary text-uppercase" id="tituloG">Master Class y Workshop </h2>
+					<h2 class="text-primary" id="subtitulo">Master Class y Workshop </h2>
 				</div>
 				<div class="row m-lr0">
 					<div class="col-lg-4 col-md-4 col-sm-6 m-b30">
@@ -266,15 +266,15 @@
 			<div class="container">
 				<div class="section-head hair-head text-center">
 					<h4 id="titulo">Precios</h4>
-					<h2 class="text-primary text-uppercase" id="tituloG">Costo de los boletos PEPE GUTIÉRREZ </h2>
+					<h2 class="text-primary " id="subtitulo">Costo de los boletos PEPE GUTIÉRREZ </h2>
 				</div>
 				<div class="pricingtable-row hair-membership">
-					<div class="row">
+					<div class="row"> 
 						<div class="col-sm-6 col-md-6 col-lg-4 m-b30">
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title">
-										<h2 id="titulo">Zona ORO</h2>
+										<h2 id="sectionMenuSub">Zona ORO</h2>
 									</div>
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Lorem</span> </div>
 									<ul class="pricingtable-features">
@@ -292,7 +292,7 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title">
-										<h2  id="titulo">Zona PLATINUM</h2>
+										<h2  id="sectionMenuSub">Zona PLATINUM</h2>
 									</div>
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$18</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">
@@ -310,7 +310,7 @@
 							<div class="pricingtable-wrapper">
 								<div class="pricingtable-inner">
 									<div class="pricingtable-title bg-primary">
-										<h2  id="titulo">Zona VIP</h2>
+										<h2  id="sectionMenuSub">Zona VIP</h2>
 									</div>
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">

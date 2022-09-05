@@ -39,16 +39,20 @@
 			font-family: 'Poppins', sans-serif;
 		}
 		#titulo{
-			font: italic bold 40px Poppins, sans-serif;
+			font: normal bold 60px Poppins, sans-serif;
 		}
 		#titulo-g{
-			font: italic bold 60px Poppins, sans-serif;
+			font: normal bold 60px Poppins, sans-serif;
 		}
 		#titulo-ch{
-			font: italic bold 15px Poppins, sans-serif;
+			font: normal bold 15px Poppins, sans-serif;
 		}
 		#subtitulo{
-			font: italic bold 20px Poppins, sans-serif;
+			font: normal 30px Poppins, sans-serif;
+			font-weight: 500;
+		}
+		#sectionMenuSub{
+			font: normal bold 30px Poppins, sans-serif;
 		}
 		#sectionSub{
 			font: normal  20px Poppins, sans-serif;
@@ -81,10 +85,10 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">	
-							<li id="titulop" class="active"><a href="{{url('inicio')}}">Home </a></li>
-							<li id="titulop"><a href="{{url('nosotros')}}">Nosotros </a></li>
+							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #000">Home </a></li>
+							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #000">Nosotros </a></li>
 							{{-- <li><a href="javascript:void(0);">Blog </a></li> --}}
-							<li id="titulop"><a href="{{url('contacto')}}">Contacto </a></li>
+							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #000">Contacto </a></li>
 						</ul>
                     </div>
                 </div>
