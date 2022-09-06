@@ -25,22 +25,52 @@
 			<div class="section-full bg-white content-inner">
 				<div class="container">
 					<div class="section-head text-black text-center">
-						<h2 class="text-primary m-b10" id="titulo">Servicios</h2>
+						<h2 class=" m-b10" id="titulo" style="color: #000;">Servicios</h2>
 						<div class="dlab-separator-outer m-b0">
 							{{-- <div class="dlab-separator text-primary style-icon"><i class="flaticon-spa text-primary"></i></div> --}}
 						</div>
-						{{-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p> --}}
+						<p>Nosotros somos Andrómeda Producciones, nos dedicamos a la capacitación  y actualización para los  MakeUp Artist  de México. <br><br>
+                        Nuestra asistencia se engloba dentro de los servicios siguientes: <br><br>
+                        Para Make Up Artist no hay nada más importante que ofrecerte el mejor servicio, con la finalidad de que aprendas y apliques los conocimientos adquiridos de la mano de nosotros en cada una de las fases.
+                    </p>
 					</div>
 					<div class="row">
 
-						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
 							<div class="service-box text-center">
 								<div class="service-images m-b15">
-									<img src="{{asset('public/andromeda/images/our-team/pic3.jpg')}}" alt=""/>
+									<img src="{{asset('public/img/nosotros/evento.jpg')}}" alt=""/>
 								</div>
 								<div class="service-content">
-									{{-- <h6 class="text-uppercase text-primary">Jennifer</h6> --}}
-									<p class="m-b0" id="textop">Capacitación  y actualización para maquilladores profesionales.</p>
+									<h6 style="color: #000;" class="text-uppercase">Eventos </h6>
+									<p class="m-b0" id="textop">Los Eventos de Makeup se desarrollan de acuerdo a la  demanda de los participantes  y de la zona del Pais.</p> 
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="service-box text-center"> 
+								<div class="service-images m-b15">
+									<img src="{{asset('public/img/nosotros/masterclass.jpg')}}" alt=""/>
+								</div>
+								<div class="service-content">
+									<h6 style="color: #000;" class="text-uppercase">Master Class </h6>
+									<p class="m-b0" id="textop">Cada una de las masterclass se  diseña para los MakeUp Artistt de Mexico  actualmente  tenemos 
+                                        Nuestro primer evento combinamos a dos grandes expertos en el Mundo del MakeUp 
+                                        Cristina cuellar y César Mushi en la ciudad de Puebla  donde nos compartieron sus secretos en cuanto a técnicas de maquillaje y los productos que ellos usan .
+                                        </p>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="service-box text-center">
+								<div class="service-images m-b15">
+									<img src="{{asset('public/img/nosotros/taller.jpg')}}" alt=""/>
+								</div>
+								<div class="service-content">
+									<h6 style="color: #000;" class="text-uppercase">Workshop  </h6>
+									<p class="m-b0" id="textop">Los Workshop  que han impartido cada uno de nuestros experto se realiza de forma personalizada para un número  exclusivo de MakeUp Artist 
+                                        No pierdas la oportunidad y compra tus acceso para  nuestro próximo evento .
+                                        </p>
 								</div>
 							</div>
 						</div>
@@ -64,7 +94,7 @@
                         <div class="price-tbl d-flex">
                             <div class="flex-grow-1">
                                 {{-- <h4 class="text-primary">Deep Tissue Massage</h4> --}}
-                                <p id="textop">Inauguración de Andrómeda producciones, que tuvieron como padrinos a CESAR MUSHI Y CRISTINA CUELLAR. </p>
+                                <p id="textop">Inauguración de Andrómeda Producciones, que tuvieron como padrinos a CESAR MUSHI Y CRISTINA CUELLAR. </p>
                             </div>
                             <div class="price-val align-self-center">
                                 {{-- <h3 class="text-secondry">$40.00</h3> --}}

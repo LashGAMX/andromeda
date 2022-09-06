@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="{{asset('public/css/master.css')}}">
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/css/plugins.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/css/style.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/css/style.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/css/templete.min.css')}}">
 	<link class="skin" rel="stylesheet" type="text/css" href="{{asset('public/andromeda/css/skin/skin-2.css')}}">
 	<!-- Revolution Slider Css -->
@@ -74,7 +74,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="index.html" class="dez-page"><img src="{{asset('public/img/logo.png')}}" alt="" style="width: 40%"></a>
+						<a href="{{url('inicio')}}" class="dez-page"><img src="{{asset('public/img/logo.png')}}" alt="" style="width: 40%"></a>
 					</div>
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,10 +85,10 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">	
-							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #000">Home </a></li>
-							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #000">Nosotros </a></li>
+							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #fff">Inicio </a></li>
+							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #fff">Nosotros </a></li>
 							{{-- <li><a href="javascript:void(0);">Blog </a></li> --}}
-							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #000">Contacto </a></li>
+							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #fff">Contacto </a></li>
 						</ul>
                     </div>
                 </div>
@@ -98,6 +98,72 @@
     </header>
     @yield('content')
 
+	<footer class="site-footer hair-footer">
+		<div class="footer-top">
+            <div class="container">
+                <div class="row">
+					{{-- <div class="col-md-12 sub-bx">
+						<h4 class="head-sub">Want to get updates on Spa & Wellness news?</h4>
+						<div class="subscribe-form m-b20">
+							<form class="dzSubscribe" action="script/mailchamp.php" method="post">
+								<div class="dzSubscribeMsg"></div>
+								<div class="input-group">
+									<input name="dzEmail" required="required"  class="form-control" placeholder="Your Email Address" type="email">
+									<span class="input-group-btn">
+										<button name="submit" value="Submit" type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+									</span> 
+								</div>
+							</form>
+						</div>
+						<ul class="list-inline  text-center">
+							<li><a target="_blank" href="https://www.facebook.com/" class="site-button-link"><i class="fa fa-facebook"></i></a></li>
+							<li><a target="_blank" href="https://www.google.com/" class="site-button-link"><i class="fa fa-google-plus"></i></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/" class="site-button-link"><i class="fa fa-linkedin"></i></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/" class="site-button-link"><i class="fa fa-instagram"></i></a></li>
+							<li><a target="_blank" href="https://twitter.com/" class="site-button-link"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div> --}}
+				</div>
+                <div class="row d-flex align-items-center">
+					<div class="col-xl-4 col-12 col-lg-3 col-md-12 col-sm-12">
+                        <div class="footer-logo widget text-center">
+                            <a href="index.html"><img src="{{url('public/img/logo.png')}}" alt=""/></a>
+                        </div>
+                    </div>
+					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4">
+                        <div class="widget">
+                            <h6>Telefono & Correo</h6>
+                            <ul>
+                                <li>+52 222 222 2222 <br/> correo@excemplo.com</li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-xl-2 col-6 col-lg-3 col-md-3 col-sm-4 footer-col-4">
+                        <div class="widget">
+                            <h6>Dirección</h6>
+                            <ul>
+                                <li>#8901 Lorem, ipsum.<br/>  Lorem, ipsum dolor. </li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4 footer-col-4">
+                        <div class="widget">
+                            <h6>Redes sociales</h6>
+                            <ul>
+                                <li>+91 800-123456 <br/> office@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-12">
+                        <div class="widget text-right">
+							<li><a target="_blank" href="https://www.facebook.com/" class="site-button-link"><i class="fa fa-facebook"></i></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/" class="site-button-link"><i class="fa fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Footer END-->
     <button class="scroltop fa fa-chevron-up" ></button>
 </div>

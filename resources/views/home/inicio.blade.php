@@ -59,7 +59,7 @@
 							data-paddingright="[0,0,0,0]"
 							data-paddingbottom="[0,0,0,0]"
 							data-paddingleft="[0,0,0,0]"
-							style="z-index: 5;"><img src="{{asset('public/img/fondo2.png')}}" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> 
+							style="z-index: 5;"><img src="{{asset('public/img/fondonew.png')}}" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280" data-no-retina> 
 						</div>
 						 
 						<!-- LAYER NR. 3 -->
@@ -182,15 +182,18 @@
 						<h4 id="titulo">Nosotros</h4>
 						{{-- <h2 class="text-primary text-uppercase">Titulo <br/> Titulo </h2> --}}
 						<p id="textop"> Andrómeda Producciones expertos en cursos de maquillaje en Puebla 
-							Es una empresa especializada en traer a tu ciudad a los mejores maquilladores de todo México y a las mejores marcas de maquillaje
-							Creamos eventos en donde combinamos Master class  y Workshops de nuestros maquilladores. En cada Masterclass nuestros ponentes explican cómo son sus técnicas de maquillaje  
-							En cada Workshop los ponentes nos enseñan a desarrollar los talentos y habilidades de la forma más rápida y específica posible.Estos workshop están supervisados por nuestros ponentes, otorgando una atención personalizada 
+							Andrómeda Producciones expertos en cursos de maquillaje en Puebla, es una empresa especializada en traer a tu ciudad a los mejores maquilladores de todo México y a las mejores marcas de maquillaje.
+							Creamos eventos en donde combinamos Masterclass  y Workshops de nuestros maquilladores   
+							En cada Masterclass nuestros ponentes explican cómo son sus técnicas de maquillaje  y  los  Workshop los ponentes nos enseñan a desarrollar los talentos y habilidades de la forma más rápida y específica posible.
+							
+							Estos workshop están supervisados por MaekUP expert, otorgando una atención personalizada. 
 							Nuestros workshops están especializados en novias y maquillaje social, logrando combinar el maquillaje con las diferentes formas y necesidades de quienes están hoy envueltos ya en el mundo del Make Up como su pasión y forma de vida.
+							
 														</p>
 						{{-- <a href="about-us.html" class="site-button-link line-link black m-b20">Leer más <span></span></a> --}}
 					</div>
 					<div class="col-lg-5 col-md-12">
-						<div class="about-hair-bx" style="background-image:url({{asset('public/img/inicio/principal1.jpg')}}); background-position:right bottom; background-repeat:no-repeat;">
+						<div class="about-hair-bx" style="background-image:url({{asset('public/img/inicio/nosotros.jpg')}}); background-position:right bottom; background-repeat:no-repeat;">
 							{{-- <div>
 								<div class="text-black"> 
 									<h2>Lorem ipsum dolor sit amet.</h2>
@@ -218,7 +221,7 @@
 			<div class="container">
 				<div class="section-head hair-head text-center">
 					<h4 id="titulo">Eventos Andrómeda Producciones</h4>
-					<h2 class="text-primary" id="subtitulo">Master Class y Workshop </h2>
+					<h2 class="" id="subtitulo" style="color:#000;">Master Class y Workshop </h2>
 				</div>
 				<div class="row m-lr0">
 					<div class="col-lg-4 col-md-4 col-sm-6 m-b30">
@@ -227,9 +230,9 @@
 								<img src="{{asset('public/img/f1.png')}}" alt="">
 							</div>
 							<div class="icon-content">
-								<h6 class="dlab-tilte-sm" id="subtitulo">Primer Evento Cristina cuellar </h6>
+								<h6 class="dlab-tilte-sm" style="color:#000;" id="subtitulo">Primer Evento Cristina Cuellar </h6>
 								<h5 class="dlab-tilte" id="sectionSub">El primer evento de Andrómeda Producciones fue con Cristina Cuellar y Cesar Mushi en donde Cristina nos enseñó</h5>
-								<a href="booking.html" class="site-button white">Leer más</a>
+								<a href="{{url('leer1')}}" class="site-button white">Leer más</a>
 							</div>
 						</div>
 					</div>
@@ -239,9 +242,9 @@
 								<img src="{{asset('public/img/f2.png')}}" alt="">
 							</div>
 							<div class="icon-content">
-								<h6 class="dlab-tilte-sm" id="subtitulo">Primer Evento césar mushi</h6>
+								<h6 class="dlab-tilte-sm" style="color:#000;" id="subtitulo">Primer Evento César Mushi</h6>
 								<h5 class="dlab-tilte" id="sectionSub">El primer evento de Andrómeda Producciones fue con Cesar Mushi en donde nos enseño</h5>
-								<a href="booking.html" class="site-button white">Leer más</a>
+								<a href="{{url('leer2')}}" class="site-button white">Leer más</a>
 							</div>
 						</div>
 					</div>
@@ -251,7 +254,7 @@
 								<img src="{{asset('public/img/f3.png')}}" alt="">
 							</div>
 							<div class="icon-content">
-								<h6 class="dlab-tilte-sm" id="subtitulo">Primer Evento Pepe Gutiérrez </h6>
+								<h6 class="dlab-tilte-sm" style="color:#000;" id="subtitulo">Primer Evento Pepe Gutiérrez </h6>
 								<h5 class="dlab-tilte" id="sectionSub">Segundo evento de Andrómeda Producciones es con Pepe Gutiérrez No te lo pierdas</h5>
 								<a href="booking.html" class="site-button white">Comprar boleto</a>
 							</div>
@@ -265,8 +268,8 @@
 		<div class="section-full content-inner"  style="background-image:url({{asset('public/andromeda/images/background/bg4.png')}}); background-position:top 50px;">
 			<div class="container">
 				<div class="section-head hair-head text-center">
-					<h4 id="titulo">Precios</h4>
-					<h2 class="text-primary " id="subtitulo">Costo de los boletos PEPE GUTIÉRREZ </h2>
+					<h4 id="titulo" style="color:#000;">Precios</h4>
+					<h2 class="" style="color:#000;" id="subtitulo">Costo de los boletos PEPE GUTIÉRREZ </h2>
 				</div>
 				<div class="pricingtable-row hair-membership">
 					<div class="row"> 
@@ -279,9 +282,7 @@
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Lorem</span> </div>
 									<ul class="pricingtable-features">
 										<li><i class="fa fa-check"></i> Ideal para Makeup que están aprendiendo.</li>
-										<li><i class="fa fa-check"></i> Acceso a la Masterclass.</li>
-										<li><i class="fa fa-check"></i> Ideal para estudiantes y personas que están aprendiendo.</li>
-										<li><i class="fa fa-check"></i> Ya que conocerán los principios de maquillaje con Pepe Gutierrez.</li>
+										<li><i class="fa fa-check"></i> Acceso a la zona .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez. </li>
 									</ul>
 									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>
@@ -296,10 +297,9 @@
 									</div>
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$18</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> zona platinum</li>
+										<li><i class="fa fa-check"></i> Ideal para  MakeUp Artist  semi profesionales.</li>
 										<li><i class="fa fa-check"></i> Acceso a la Masterclass </li>
-										<li><i class="fa fa-check"></i> Ideal para  semi profesionales </li>
-										<li><i class="fa fa-check"></i> que están aprendiendo a desarrollar en el mundo del Makeup</li>
+										<li><i class="fa fa-check"></i> Acceso a la zona  A .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez </li>
 									</ul>
 									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>
@@ -314,10 +314,10 @@
 									</div>
 									<div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">lorem</span> </div>
 									<ul class="pricingtable-features">
-										<li><i class="fa fa-check"></i> Acceso a la Masterclass  Y workshop .</li>
-										<li><i class="fa fa-check"></i> Kit de bienvenida.</li>
+										<li><i class="fa fa-check"></i> Ideal para MakeUp Artist Profesionales .</li>
+										<li><i class="fa fa-check"></i> Acceso a la Masterclass  de Pepe Guitierrez .</li>
 										<li><i class="fa fa-check"></i> Workshop exclusiva con Pepe Guitierrez.</li>
-										<li><i class="fa fa-check"></i> Ideal para profesionales del Makeup.</li>
+										<li><i class="fa fa-check"></i> Beauty Bag .</li>
 										<li><i class="fa fa-check"></i> Foto Personal con Pepe Guitierrez.</li>
 									</ul>
 									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>

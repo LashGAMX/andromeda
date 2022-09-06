@@ -5,7 +5,7 @@
 @section('content')
 <div class="page-content bg-white">
     		<!-- inner page banner -->
-            <div class="dlab-bnr-inr dlab-bnr-inr overlay-primary bg-pt" style="background-image:url({{asset('public/img/banner2.jpg')}});">
+            <div class="dlab-bnr-inr dlab-bnr-inr  bg-pt" style="background-image:url({{asset('public/img/banner2.jpg')}});">
                 <div class="container">
                     <div class="dlab-bnr-inr-entry">
                         <h1 class="text-white" id="titulo">Contactanos</h1>
@@ -23,37 +23,37 @@
 					<!-- right part start -->
 					<div class="col-lg-4 col-md-6 d-flex">
                         <div class="p-a30 border m-b30 contact-area border-1 align-self-stretch ">
-							<h4 class="m-b10" id="titulo">Contacto</h4>
+							<h4 class="m-b10" id="subtitulo">Contácto</h4>
 							<p id="textop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, culpa?</p>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-location-pin"></i></span> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dlab-tilte" id="subtitulo">Dirección:</h6>
+                                        <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Dirección:</h6>
                                         <p id="textop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, placeat.</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-email"></i></span> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dlab-tilte" id="subtitulo">Correo:</h6>
+                                        <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Correo:</h6>
                                         <p id="textop">info@example.com</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-mobile"></i></span> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dlab-tilte" id="subtitulo">Telefono</h6>
+                                        <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Telefono</h6>
                                         <p id="textop">+25 222 222 2222</p>
                                     </div>
                                 </li>
                             </ul>
 							<div class="m-t20">
 								<ul class="dlab-social-icon dlab-social-icon-lg">
-									<li><a target="_blank" href="https://www.facebook.com/andromedainstituto/" class="fa fa-facebook bg-primary"></a></li>
+									<li><a target="_blank" href="https://www.facebook.com/andromedainstituto/" class="fa fa-facebook" style="background:#6f3200"></a></li>
 									{{-- <li><a target="_blank" href="https://twitter.com/" class="fa fa-twitter bg-primary"></a></li>
 									<li><a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin bg-primary"></a></li> --}}
-									<li><a target="_blank" href="https://www.instagram.com/andromeda_institute/" class="fa fa-instagram bg-primary"></a></li>
+									<li><a target="_blank" href="https://www.instagram.com/andromeda_institute/" class="fa fa-instagram" style="background:#6f3200"></a></li>
 									{{-- <li><a target="_blank" href="https://www.google.com/" class="fa fa-google-plus bg-primary"></a></li> --}}
 								</ul>
 							</div>
@@ -63,12 +63,12 @@
                     <!-- Left part start -->
 					<div class="col-lg-4 col-md-6 m-b30">
                         <div class="p-a30 bg-gray clearfix">
-							<h4 id="titulo">Envianos mensaje</h4>
+							<h4 id="subtitulo">Envíanos mensaje</h4>
 							<div class="dzFormMsg"></div>
 							<form method="post" class="dzForm" action="script/contact.php">
 							<input type="hidden" value="Contact" name="dzToDo" >
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-12">as
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input name="dzName" type="text" required class="form-control" placeholder="Escribe tu nombre">
@@ -98,7 +98,7 @@
 										</div>
 									</div>
                                     <div class="col-lg-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button "> <span id="textop">Enviar</span> </button>
+                                        <button name="submit" type="submit" value="Submit" class="site-button" style="background: #6f3200"> <span id="textop">Enviar</span> </button>
                                     </div>
                                 </div>
                             </form>
