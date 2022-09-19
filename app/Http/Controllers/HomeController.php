@@ -10,7 +10,8 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        return redirect('proximamente');
+        return view('home.inicio');
+        // return redirect('proximamente');
     }
     public function proximamente(){
         return view('home.proximamente');

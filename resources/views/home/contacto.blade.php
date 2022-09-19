@@ -33,13 +33,13 @@
                                         <p id="textop">Cocoyoc 5313, La Hacienda, 72570 Puebla, Pue.</p>
                                     </div>
                                 </li>
-                                <li class="icon-bx-wraper left  m-b30">
+                                {{-- <li class="icon-bx-wraper left  m-b30">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-email"></i></span> </div>
                                     <div class="icon-content">
                                         <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Correo:</h6>
                                         <p id="textop">info@example.com</p>
                                     </div>
-                                </li>
+                                </li> --}}
                                 <li class="icon-bx-wraper left">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-mobile"></i></span> </div>
                                     <div class="icon-content">
