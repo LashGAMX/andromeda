@@ -89,7 +89,7 @@
                         <ul class="nav navbar-nav">	
 							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #fff">Inicio </a></li>
 							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #fff">Nosotros </a></li>
-							{{-- <li><a href="javascript:void(0);">Blog </a></li> --}}
+							<li id="titulop" ><a href="{{url('blog')}}" style="text-transform: capitalize;color: #fff">Blog </a></li>
 							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #fff">Contacto </a></li>
 						</ul>
                     </div>
