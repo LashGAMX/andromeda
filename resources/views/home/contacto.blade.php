@@ -24,13 +24,13 @@
 					<div class="col-lg-4 col-md-6 d-flex">
                         <div class="p-a30 border m-b30 contact-area border-1 align-self-stretch ">
 							<h4 class="m-b10" id="subtitulo">Contácto</h4>
-							<p id="textop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, culpa?</p>
+							{{-- <p id="textop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, culpa?</p> --}}
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-location-pin"></i></span> </div>
                                     <div class="icon-content">
                                         <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Dirección:</h6>
-                                        <p id="textop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, placeat.</p>
+                                        <p id="textop">Cocoyoc 5313, La Hacienda, 72570 Puebla, Pue.</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
@@ -44,7 +44,7 @@
                                     <div class="icon-bx-xs border-1"> <span class="icon-cell text-primary"><i class="ti-mobile"></i></span> </div>
                                     <div class="icon-content">
                                         <h6 class="m-tb0 dlab-tilte" id="titulo-ch">Telefono</h6>
-                                        <p id="textop">+25 222 222 2222</p>
+                                        <p id="textop">+52 222 473 4165</p>
                                     </div>
                                 </li>
                             </ul>
@@ -68,7 +68,7 @@
 							<form method="post" class="dzForm" action="script/contact.php">
 							<input type="hidden" value="Contact" name="dzToDo" >
                                 <div class="row">
-                                    <div class="col-lg-12">as
+                                    <div class="col-lg-12">
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input name="dzName" type="text" required class="form-control" placeholder="Escribe tu nombre">
@@ -107,7 +107,7 @@
                     <!-- Left part END -->
 					<div class="col-lg-4 col-md-12 d-flex m-b30">
 						{{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" class="align-self-stretch " style="border:0; width:100%; height:100%;" allowfullscreen></iframe> --}}
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120689.12363178469!2d-98.26300585597724!3d19.040196274484934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1662068969715!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.1547924810075!2d-98.19487628534208!3d19.01289955889422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc10ed97f197f%3A0xf5621f9ec3bb058c!2sInstituto%20Ana%20Lilia%20Gonzaga!5e0!3m2!1ses-419!2smx!4v1662577374684!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
                 </div>
             </div>

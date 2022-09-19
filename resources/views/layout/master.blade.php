@@ -30,6 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/layers.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/settings.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/navigation.css')}}">
+	<script src="https://widget.manychat.com/111985620932162.js" defer="defer"></script>
+	<script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
 
 
 	

@@ -505,4 +505,6 @@ jQuery(document).ready(function() {
 	dz_rev_slider_3();
 });	/*ready*/
 </script>
+
+
 @endsection
