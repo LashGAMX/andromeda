@@ -10,8 +10,8 @@ class BlogController extends Controller
     //
     public function blog()
     {
-        $model = Post::all();
-        $post = Post::where('deleted_at','null')->limit(3)->get();
+        $model = Post::where('status','PUBLISHED')->orderBy('id','desc')->get();
+        $post = Post::where('status','PUBLISHED')->orderBy('id','desc')->limit(3)->get();
         $data = array(
             'post' => $post,
             'model' => $model,
@@ -21,7 +21,7 @@ class BlogController extends Controller
     public function show($id)
     {
         $model = Post::find($id);
-        $post = Post::where('deleted_at','null')->limit(3)->get();
+        $post = Post::where('status','PUBLISHED')->orderBy('id','desc')->limit(3)->get();
         $data = array(
             'post' => $post,
             'model' => $model,

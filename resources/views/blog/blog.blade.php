@@ -1,6 +1,9 @@
 @extends('layout.master') 
     @section('title')
-    Contacto
+    Blog
+    @endsection
+    @section('head')
+        
     @endsection
 @section('content')
 <div class="page-content bg-white">
@@ -29,10 +32,10 @@
                                 <div class="post card-container col-lg-6 col-md-6 col-sm-6">
                                     <div class="blog-post blog-grid blog-style-1">
                                         <div class="dlab-post-media dlab-img-effect radius-sm">
-                                            <a href="blog-details.html"><img src="{{asset('public/'.$item->image)}}" alt=""></a>
+                                            <a href="blog-details.html"><img src="{{asset("public/storage/".$item->image)}}" alt=""></a>
                                         </div>
                                         <div class="dlab-info">
-                                            <div class="dlab-post-meta">
+                                            <div class="dlab-post-meta"> 
                                                 <ul class="d-flex align-items-center">
                                                     {{-- <li class="post-date">September 18, 2017</li>
                                                     <li class="post-comment"><a href="blog-details.html">5k</a> </li> --}}
@@ -67,7 +70,7 @@
                     <!-- Side bar start -->
                     <div class="col-lg-4 col-md-5 col-sm-12 sticky-top">
                         <aside  class="side-bar">
-                            <div class="widget">
+                            {{-- <div class="widget">
                                 <h6 class="widget-title style-1">Buscador</h6>
                                 <div class="search-bx style-1">
                                     <form role="search" method="post">
@@ -79,13 +82,13 @@
 										</div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="widget recent-posts-entry">
                                 <h6 class="widget-title style-1">Posts recientes</h6>
                                 <div class="widget-post-bx">
                                     @foreach ($post as $item)
                                     <div class="widget-post clearfix">
-                                        <div class="dlab-post-media"> <img src="images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+                                        <div class="dlab-post-media"> <img src="{{asset('public/storage/'.$item->image)}}" width="200" height="143" alt=""> </div>
                                         <div class="dlab-post-info">
                                             <div class="dlab-post-header">
                                                 <h6 class="post-title"><a href="{{url('blog/'.$item->id)}}">{{$item->title}}</a></h6>

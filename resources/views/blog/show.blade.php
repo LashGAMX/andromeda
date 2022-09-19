@@ -1,6 +1,10 @@
 @extends('layout.master') 
     @section('title')
-    Contacto
+    {{$model->seo_title}}
+    @endsection
+    @section('head')
+        <meta name="keywords" content="{{$model->meta_keywords}}" />
+        <meta name="description" content="{{$model->meta_description}}">
     @endsection
 @section('content')
 <div class="page-content bg-white">
@@ -35,8 +39,8 @@
                             <div class="dlab-post-title">
                                 <h4 class="post-title m-t0">{{$model->title}}</h4>
                             </div>
-                            <div class="dlab-post-media dlab-img-effect zoom-slow m-t20">
-								<img src="{{asset('public/'.$model->image)}}" alt="">
+                            <div class="dlab-post-media dlab-img-effect zoom-slow m-t20"> 
+								<img src="{{asset('public/storage/'.$model->image)}}" alt="">
 							</div>
                             <div class="dlab-post-text">
                                 @php
@@ -66,7 +70,7 @@
                     <!-- Side bar start -->
                     <div class="col-lg-4 col-md-5 col-sm-12 sticky-top">
                         <aside  class="side-bar">
-                            <div class="widget">
+                            {{-- <div class="widget">
                                 <h6 class="widget-title style-1">Buscador</h6>
                                 <div class="search-bx style-1">
                                     <form role="search" method="post">
@@ -78,16 +82,16 @@
 										</div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="widget recent-posts-entry">
                                 <h6 class="widget-title style-1">Posts recientes</h6>
                                 <div class="widget-post-bx">
                                     @foreach ($post as $item)
                                     <div class="widget-post clearfix">
-                                        <div class="dlab-post-media"> <img src="images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+                                        <div class="dlab-post-media"> <img src="{{asset('public/storage/'.$item->image)}}" width="200" height="143" alt=""> </div>
                                         <div class="dlab-post-info">
                                             <div class="dlab-post-header">
-                                                <h6 class="post-title"><a href="blog-details.html">{{$item->title}}</a></h6>
+                                                <h6 class="post-title"><a href="{{url('blog/'.$item->id)}}">{{$item->title}}</a></h6>
                                             </div>
 											<div class="dlab-post-meta">
 												<ul class="d-flex align-items-center">
