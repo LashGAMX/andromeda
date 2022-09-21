@@ -11,7 +11,7 @@ class HomeController extends Controller
     //
     public function index(){
         return view('home.inicio');
-        // return redirect('proximamente');
+        // return redirect('mantenimiento');
     }
     public function proximamente(){
         return view('home.proximamente');
@@ -25,6 +25,10 @@ class HomeController extends Controller
     }
     public function inicio(){
         return view('home.inicio');
+    }
+    public function mantenimiento()
+    {
+        return view('home.mantenimiento');
     }
     public function registro(){
         return view('home.registro');

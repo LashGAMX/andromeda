@@ -6,7 +6,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-primary" style="background-image:url({{asset('public/img/banner1.jpg')}});">
+        <div class="dlab-bnr-inr " style="background-image:url({{asset('public/img/banner1.jpg')}});">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white" id="titulo">¿Quiénes somos? </h1>

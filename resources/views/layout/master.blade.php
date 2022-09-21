@@ -37,6 +37,7 @@
 	
 	<!-- Revolution Navigation Style -->
 	<style>
+	
 		#body{
 			font-family: 'Poppins', sans-serif;
 		}
@@ -76,7 +77,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="{{url('inicio')}}" class="dez-page"><img src="{{asset('public/img/logo.png')}}" alt="" style="width: 40%"></a>
+						<a href="{{url('inicio')}}" class="dez-page"><img id="logo" src="{{asset('public/img/logo.png')}}" alt="" style="width: 40%;"></a>
 					</div>
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +90,7 @@
                         <ul class="nav navbar-nav">	
 							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #fff">Inicio </a></li>
 							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #fff">Nosotros </a></li>
-							{{-- <li id="titulop" ><a href="{{url('blog')}}" style="text-transform: capitalize;color: #fff">Blog </a></li> --}}
+							<li id="titulop" ><a href="{{url('blog')}}" style="text-transform: capitalize;color: #fff">Blog </a></li>
 							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #fff">Contacto </a></li>
 						</ul>
                     </div>
@@ -132,36 +133,36 @@
                             <a href="index.html"><img src="{{url('public/img/logo.png')}}" alt=""/></a>
                         </div>
                     </div>
-					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4">
+					<div class="col-xl-4 col-6 col-lg-2 col-md-3 col-sm-4">
                         <div class="widget">
                             <h6>Telefono & Correo</h6>
                             <ul>
-                                <li>+52 222 222 2222 <br/> correo@excemplo.com</li>
-                            </ul>
+                                <li>+52 222 473 4165</li>
+								<li>andromeda.producciones@outloock.com</li>
+                            </ul> 
                         </div>
                     </div>
 					<div class="col-xl-2 col-6 col-lg-3 col-md-3 col-sm-4 footer-col-4">
                         <div class="widget">
                             <h6>Dirección</h6>
                             <ul>
-                                <li>#8901 Lorem, ipsum.<br/>  Lorem, ipsum dolor. </li>
+                                <li>Cocoyoc 5313, La Hacienda,<br/>  72570 Puebla, Pue. </li>
                             </ul>
                         </div>
                     </div>
 					<div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-4 footer-col-4">
                         <div class="widget">
                             <h6>Redes sociales</h6>
-                            <ul>
-                                <li>+91 800-123456 <br/> office@example.com</li>
-                            </ul>
+							<ul class="dlab-social-icon dlab-social-icon-lg">
+								<li><a target="_blank" href="https://www.facebook.com/andromedainstituto/" class="fa fa-facebook" style="background:#6f3200"></a></li>
+								{{-- <li><a target="_blank" href="https://twitter.com/" class="fa fa-twitter bg-primary"></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin bg-primary"></a></li> --}}
+								<li><a target="_blank" href="https://www.instagram.com/andromeda_institute/" class="fa fa-instagram" style="background:#6f3200"></a></li>
+								{{-- <li><a target="_blank" href="https://www.google.com/" class="fa fa-google-plus bg-primary"></a></li> --}}
+							</ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-6 col-lg-2 col-md-3 col-sm-12">
-                        <div class="widget text-right">
-							<li><a target="_blank" href="https://www.facebook.com/" class="site-button-link"><i class="fa fa-facebook"></i></a></li>
-							<li><a target="_blank" href="https://www.instagram.com/" class="site-button-link"><i class="fa fa-instagram"></i></a></li>
-                        </div>
-                    </div>
+    
                 </div>
             </div>
         </div>
@@ -169,8 +170,9 @@
     <!-- Footer END-->
     <button class="scroltop fa fa-chevron-up" ></button>
 </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="{{asset('public/andromeda/js/jquery.min.js')}}"></script><!-- JQUERY.MIN JS -->
+{{-- <script src="{{asset('public/andromeda/js/jquery.min.js')}}"></script><!-- JQUERY.MIN JS --> --}}
 <script src="{{asset('public/andromeda/plugins/wow/wow.js')}}"></script><!-- WOW JS -->
 <script src="{{asset('public/andromeda/plugins/bootstrap/js/popper.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="{{asset('public/andromeda/plugins/bootstrap/js/bootstrap.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->
@@ -187,7 +189,7 @@
 <script src="{{asset('public/andromeda/js/custom.min.js')}}"></script><!-- CUSTOM FUCTIONS  -->
 <script src="{{asset('public/andromeda/js/dz.carousel.min.js')}}"></script><!-- SORTCODE FUCTIONS  -->
 <script src="{{asset('public/andromeda/js/dz.ajax.js')}}"></script><!-- CONTACT JS  -->
-
+<script src="{{asset('public/js/master.js')}}"></script>
 
 @yield('script')
 

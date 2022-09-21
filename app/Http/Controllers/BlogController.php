@@ -16,6 +16,18 @@ class BlogController extends Controller
             'post' => $post,
             'model' => $model,
         );
+        return redirect('mantenimiento');
+        // return view('blog.blog',$data);
+    }
+    public function blogTemp()
+    {
+        $model = Post::where('status','PUBLISHED')->orderBy('id','desc')->get();
+        $post = Post::where('status','PUBLISHED')->orderBy('id','desc')->limit(3)->get();
+        $data = array(
+            'post' => $post,
+            'model' => $model,
+        );
+        // return redirect('mantenimiento');
         return view('blog.blog',$data);
     }
     public function show($id)

@@ -279,13 +279,13 @@
 									<div class="pricingtable-title">
 										<h2 id="sectionMenuSub">Zona ORO</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Lorem</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$2800.00</span> <br> <span class="pricingtable-type" style="text-transform: capitalize;font-size: 15px;">Reserva: $1000.00</span> </div>
 									<ul class="pricingtable-features">
 										<li><i class="fa fa-check"></i> Ideal para Makeup que están aprendiendo.</li>
 										<li><i class="fa fa-check"></i> Acceso a la zona .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez. </li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button ">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>
@@ -295,14 +295,14 @@
 									<div class="pricingtable-title">
 										<h2  id="sectionMenuSub">Zona PLATINUM</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$18</span> <span class="pricingtable-type">lorem</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$3500.00</span> <br> <span class="pricingtable-type" style="text-transform: capitalize;font-size: 15px;">Reserva: $1000.00</span> </div>
 									<ul class="pricingtable-features">
 										<li><i class="fa fa-check"></i> Ideal para  MakeUp Artist  semi profesionales.</li>
 										<li><i class="fa fa-check"></i> Acceso a la Masterclass </li>
 										<li><i class="fa fa-check"></i> Acceso a la zona  A .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez </li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button ">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>
@@ -312,7 +312,7 @@
 									<div class="pricingtable-title bg-primary">
 										<h2  id="sectionMenuSub">Zona VIP</h2>
 									</div>
-									<div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">lorem</span> </div>
+									<div class="pricingtable-price"> <span class="pricingtable-bx">$5000.00</span> <br><span class="pricingtable-type" style="text-transform: capitalize;font-size: 15px;">Reserva: $200.00</span> </div>
 									<ul class="pricingtable-features">
 										<li><i class="fa fa-check"></i> Ideal para MakeUp Artist Profesionales .</li>
 										<li><i class="fa fa-check"></i> Acceso a la Masterclass  de Pepe Guitierrez .</li>
@@ -320,7 +320,7 @@
 										<li><i class="fa fa-check"></i> Beauty Bag .</li>
 										<li><i class="fa fa-check"></i> Foto Personal con Pepe Guitierrez.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="contact.html" class="site-button ">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>

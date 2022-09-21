@@ -8,7 +8,7 @@
             <div class="dlab-bnr-inr dlab-bnr-inr  bg-pt" style="background-image:url({{asset('public/img/banner2.jpg')}});">
                 <div class="container">
                     <div class="dlab-bnr-inr-entry">
-                        <h1 class="text-white" id="titulo">Contactanos</h1>
+                        <h1 class="text-white" id="titulo">Contáctanos</h1>
                         <!-- Breadcrumb row -->
 
                         <!-- Breadcrumb row END -->
