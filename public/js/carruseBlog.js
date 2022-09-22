@@ -1,137 +1,222 @@
-let slide_data = [
-    {
-      'src':'https://images.unsplash.com/photo-1506765336936-bb05e7e06295?ixlib=rb-0.3.5&s=d40582dbbbb66c7e0812854374194c2e&auto=format&fit=crop&w=1050&q=80',
-      'title':'Slide 1',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-    },
-    {
-      'src':'https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-0.3.5&s=4d04f3d5a488db4031d90f5a1fbba42d&auto=format&fit=crop&w=1050&q=80', 
-      'title':'Slide 2',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-    },
-    {
-      'src':'https://images.unsplash.com/photo-1504271863819-d279190bf871?ixlib=rb-0.3.5&s=7a2b986d405a04b3f9be2e56b2be40dc&auto=format&fit=crop&w=334&q=80', 
-      'title':'Slide 3',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-    },
-    {
-      'src':'https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-0.3.5&s=87131a6b538ed72b25d9e0fc4bf8df5b&auto=format&fit=crop&w=1050&q=80', 
-      'title':'Slide 4',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-    },
-    
-  ];
-  let slides = [],
-    captions = [];
-  
-  let autoplay = setInterval(function(){
-    nextSlide();
-  },5000);
-  let container = document.getElementById('container');
-  let leftSlider = document.getElementById('left-col');
-  // console.log(leftSlider);
-  let down_button = document.getElementById('down_button');
-  // let caption = document.getElementById('slider-caption');
-  // let caption_heading = caption.querySelector('caption-heading');
-  
-  down_button.addEventListener('click',function(e){
-    e.preventDefault();
-    clearInterval(autoplay);
-    nextSlide();
-    autoplay;
+
+$(document).ready(function () {
+  const $cont = $('.cont');
+  const $slider = $('.slider');
+  const $nav = $('.nav2');
+  const winW = $(window).width();
+  const animSpd = 750; // Change also in CSS
+  const distOfLetGo = winW * 0.2;
+  let curSlide = 1;
+  let animation = false;
+  let autoScrollVar = true;
+  let diff = 0;
+
+  // Generating slides
+  let arrCities = ['BEL---LEZA', 'M--AK-EUP', 'FA-S-HION', 'C ONSEJOS', 'ARTIS-TAS']; // Change number of slides in CSS also
+  let numOfCities = arrCities.length;
+  let arrCitiesDivided = [];
+
+  arrCities.map(city => {
+    let length = city.length;
+    let letters = Math.floor(length / 4);
+    let exp = new RegExp(".{1," + letters + "}", "g");
+
+    arrCitiesDivided.push(city.match(exp));
   });
-  
-  for (let i = 0; i< slide_data.length; i++){
-    let slide = document.createElement('div'),
-        caption = document.createElement('div'),
-        slide_title = document.createElement('div');
-      
-    slide.classList.add('slide');
-    slide.setAttribute('style','background:url('+slide_data[i].src+')');
-    caption.classList.add('caption');
-    slide_title.classList.add('caption-heading');
-    slide_title.innerHTML = '<h1>'+slide_data[i].title+'</h1>';
-    
-    switch(i){
-      case 0:
-          slide.classList.add('current');
-          caption.classList.add('current-caption');
-          break;
-      case 1:
-          slide.classList.add('next');
-          caption.classList.add('next-caption');
-          break;
-      case slide_data.length -1:
-        slide.classList.add('previous');
-        caption.classList.add('previous-caption');
-        break;
-      default:
-         break;       
+
+  let generateSlide = function (city) {
+    let frag1 = $(document.createDocumentFragment());
+    let frag2 = $(document.createDocumentFragment());
+    const numSlide = arrCities.indexOf(arrCities[city]) + 1;
+    const firstLetter = arrCitiesDivided[city][0].charAt(0);
+
+    const $slide =
+    $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+							<div class="slide__darkbg slide--${numSlide}__darkbg"></div>
+							<div class="slide__text-wrapper slide--${numSlide}__text-wrapper"></div>
+						</div>`);
+
+    const letter =
+    $(`<div class="slide__letter slide--${numSlide}__letter">
+							${firstLetter}
+						</div>`);
+
+    for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
+      const text =
+      $(`<div class="slide__text slide__text--${i + 1}">
+								${arrCitiesDivided[city][i]}
+							</div>`);
+      frag1.append(text);
     }
-    caption.appendChild(slide_title);
-    caption.insertAdjacentHTML('beforeend','<div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div>');
-    slides.push(slide);
-    captions.push(caption);
-    leftSlider.appendChild(slide);
-    container.appendChild(caption);
-  }
-  // console.log(slides);
-  
-  function nextSlide(){
-    // caption.classList.add('offscreen');
-    
-    slides[0].classList.remove('current');
-    slides[0].classList.add('previous','change');
-    slides[1].classList.remove('next');
-    slides[1].classList.add('current');
-    slides[2].classList.add('next');
-    let last = slides.length -1;
-    slides[last].classList.remove('previous');
-    
-    captions[0].classList.remove('current-caption'); 
-    captions[0].classList.add('previous-caption','change'); 
-    captions[1].classList.remove('next-caption');
-    captions[1].classList.add('current-caption');
-    captions[2].classList.add('next-caption');
-    let last_caption = captions.length -1;
-    
-    // console.log(last);
-    captions[last].classList.remove('previous-caption');
-    
-    let placeholder = slides.shift();
-    let captions_placeholder = captions.shift();
-    slides.push(placeholder); 
-    captions.push(captions_placeholder);
-  }
-  
-  let heading = document.querySelector('.caption-heading');
-  
-  
-  // https://jonsuh.com/blog/detect-the-end-of-css-animations-and-transitions-with-javascript/
-  function whichTransitionEvent(){
-    var t,
-        el = document.createElement("fakeelement");
-  
-    var transitions = {
-      "transition"      : "transitionend",
-      "OTransition"     : "oTransitionEnd",
-      "MozTransition"   : "transitionend",
-      "WebkitTransition": "webkitTransitionEnd"
+
+    const navSlide = $(`<li data-target="${numSlide}" class="nav2__slide nav2__slide--${numSlide}"></li>`);
+    frag2.append(navSlide);
+    $nav.append(frag2);
+
+    $slide.find(`.slide--${numSlide}__text-wrapper`).append(letter).append(frag1);
+    $slider.append($slide);
+
+    if (arrCities[city].length <= 4) {
+      $('.slide--' + numSlide).find('.slide__text').css("font-size", "12vw");
     }
+  };
+
+  for (let i = 0, length = numOfCities; i < length; i++) {
+    generateSlide(i);
+  }
+
+  $('.nav2__slide--1').addClass('nav2-active');
+
+  // Navigation
+  function bullets(dir) {
+    $('.nav2__slide--' + curSlide).removeClass('nav2-active');
+    $('.nav2__slide--' + dir).addClass('nav2-active');
+  }
+
+  function timeout() {
+    animation = false;
+  }
+
+  function pagination(direction) {
+    animation = true;
+    diff = 0;
+    $slider.addClass('animation');
+    $slider.css({
+      'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)' });
+
+
+    $slider.find('.slide__darkbg').css({
+      'transform': 'translate3d(' + (curSlide - direction) * 50 + '%, 0, 0)' });
+
+
+    $slider.find('.slide__letter').css({
+      'transform': 'translate3d(0, 0, 0)' });
+
+
+    $slider.find('.slide__text').css({
+      'transform': 'translate3d(0, 0, 0)' });
+
+  }
+  function navigateRight() {
+    if (!autoScrollVar) return;
+    if (curSlide >= numOfCities) return;
+    pagination(0);
+    setTimeout(timeout, animSpd);
+    bullets(curSlide + 1);
+    curSlide++;
+  }
+
+  function navigateLeft() {
+    if (curSlide <= 1) return;
+    pagination(2);
+    setTimeout(timeout, animSpd);
+    bullets(curSlide - 1);
+    curSlide--;
+  }
+
+  function toDefault() {
+    pagination(1);
+    setTimeout(timeout, animSpd);
+  }
   
-    for (t in transitions){
-      if (el.style[t] !== undefined){
-        return transitions[t];
-      }
+  let contS = 0;
+ function recorrerSlider()
+ {  
+    if (contS == 4)
+    {
+      navigateLeft();
+      navigateLeft();
+      navigateLeft();
+      navigateLeft();
+      contS = 0;
+    }else{
+      navigateRight();
+      contS++;
     }
-  }
+ }
   
-  var transitionEvent = whichTransitionEvent()
-  caption.addEventListener(transitionEvent, customFunction);
-  
-  function customFunction(event) {
-    caption.removeEventListener(transitionEvent, customFunction);
-    console.log('animation ended');
-  
-    // Do something when the transition ends
-  }
+  setInterval(recorrerSlider,5000)
+  // Events
+  $(document).on('mousedown touchstart', '.slide', function (e) {
+    if (animation) return;
+    let target = +$(this).attr('data-target');
+    let startX = e.pageX || e.originalEvent.touches[0].pageX;
+    $slider.removeClass('animation');
+
+    $(document).on('mousemove touchmove', function (e) {
+      let x = e.pageX || e.originalEvent.touches[0].pageX;
+      diff = startX - x;
+      if (target === 1 && diff < 0 || target === numOfCities && diff > 0) return;
+
+      $slider.css({
+        'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
+
+
+      $slider.find('.slide__darkbg').css({
+        'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
+
+
+      $slider.find('.slide__letter').css({
+        'transform': 'translate3d(' + diff / 60 + 'vw, 0, 0)' });
+
+
+      $slider.find('.slide__text').css({
+        'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
+
+    });
+  });
+
+  $(document).on('mouseup touchend', function (e) {
+    $(document).off('mousemove touchmove');
+
+    if (animation) return;
+
+    if (diff >= distOfLetGo) {
+      navigateRight();
+    } else if (diff <= -distOfLetGo) {
+      navigateLeft();
+    } else {
+      toDefault();
+    }
+    // function moveautomatic(){
+    //   // console.log("cont"+cont++)
+    //   navigateRight();
+    // }
+    
+    
+  });
+  // setInterval('navigateLeft()',1000);
+
+
+
+
+
+
+
+  $(document).on('click', '.nav2__slide:not(.nav2-active)', function () {
+    let target = +$(this).attr('data-target');
+    bullets(target);
+    curSlide = target;
+    pagination(1);
+  });
+
+  $(document).on('click', '.side-nav', function () {
+    let target = $(this).attr('data-target');
+
+    if (target === 'right') navigateRight();
+    if (target === 'left') navigateLeft();
+  });
+
+  $(document).on('keydown', function (e) {
+    if (e.which === 39) navigateRight();
+    if (e.which === 37) navigateLeft();
+  });
+
+  $(document).on('mousewheel DOMMouseScroll', function (e) {
+    if (animation) return;
+    let delta = e.originalEvent.wheelDelta;
+
+    if (delta > 0 || e.originalEvent.detail < 0) navigateLeft();
+    if (delta < 0 || e.originalEvent.detail > 0) navigateRight();
+  });
+});

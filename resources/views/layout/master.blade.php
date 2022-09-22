@@ -170,7 +170,9 @@
     <!-- Footer END-->
     <button class="scroltop fa fa-chevron-up" ></button>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script> 
 <!-- JAVASCRIPT FILES ========================================= -->
 {{-- <script src="{{asset('public/andromeda/js/jquery.min.js')}}"></script><!-- JQUERY.MIN JS --> --}}
 <script src="{{asset('public/andromeda/plugins/wow/wow.js')}}"></script><!-- WOW JS -->
