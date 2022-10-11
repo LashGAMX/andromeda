@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
-
+    <script src="//widget.manychat.com/111985620932162.js" defer="defer"></script>
+    <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+    
 @endsection
 @section('content') 
  

@@ -30,8 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/layers.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/settings.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/andromeda/plugins/revolution/revolution/css/navigation.css')}}">
-	<script src="https://widget.manychat.com/111985620932162.js" defer="defer"></script>
-	<script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+
 
 
 	
@@ -64,10 +63,21 @@
 			font: normal  15px Poppins, sans-serif;
 			font-style: normal
 		}
+		#titulop a{
+			color: #fff;
+		}
+		@media screen and (max-width: 991px) {
+			#titulop a{
+				color: black;
+			}
+			.colorp{
+				color: #000;
+			}
+		}
 	
 	</style>
     @yield('head')
-</head>
+</head> 
 <body id="bg">
 <div class="page-wraper">
     <header class="site-header header header-transparent mo-left header-salon tb">
@@ -82,16 +92,16 @@
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
-						<span></span>
+						<span></span> 
 						<span></span>
 					</button>
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">	
-							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize; color: #fff">Inicio </a></li>
-							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;color: #fff">Nosotros </a></li>
-							<li id="titulop" ><a href="{{url('blog')}}" style="text-transform: capitalize;color: #fff">Blog </a></li>
-							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;color: #fff">Contacto </a></li>
+							<li id="titulop" class="active" class="colorp"><a href="{{url('inicio')}}" style="text-transform: capitalize;">Inicio </a></li>
+							<li id="titulop" ><a href="{{url('nosotros')}}" style="text-transform: capitalize;">Nosotros </a></li>
+							<li id="titulop" ><a href="{{url('blog')}}" style="text-transform: capitalize;">Blog </a></li>
+							<li id="titulop" class="colorp"><a href="{{url('contacto')}}" style="text-transform: capitalize;">Contacto </a></li>
 						</ul>
                     </div>
                 </div>

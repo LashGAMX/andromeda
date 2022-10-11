@@ -5,6 +5,9 @@
     @section('head')
         <meta name="keywords" content="{{$model->meta_keywords}}" />
         <meta name="description" content="{{$model->meta_description}}">
+        <script src="//widget.manychat.com/111985620932162.js" defer="defer"></script>
+    <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+
     @endsection
 @section('content')
 <div class="page-content bg-white">

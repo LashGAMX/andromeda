@@ -6,6 +6,8 @@
 		<meta name="description" content="Cristina Cuellar en Puebla en el primer evento de andrómeda producciones en donde nos  enseño técnicas exclusivas">
 		<meta name="description" content="Cesar Mushi en Puebla en el primer evento de Andrómeda Producciones en donde mostró sus secretos en el arte del Makeup">
 		<meta name="description" content="Pepe Gutiérrez en Puebla en el segundo  evento de Andrómeda Producciones">
+		<script src="//widget.manychat.com/111985620932162.js" defer="defer"></script>
+		<script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
 	@endsection
 @section('content')
     <!-- Content -->
@@ -256,7 +258,7 @@
 							<div class="icon-content">
 								<h6 class="dlab-tilte-sm" style="color:#000;" id="subtitulo">Primer Evento Pepe Gutiérrez </h6>
 								<h5 class="dlab-tilte" id="sectionSub">Segundo evento de Andrómeda Producciones es con Pepe Gutiérrez No te lo pierdas</h5>
-								<a href="booking.html" class="site-button white">Comprar boleto</a>
+								<a href="https://api.whatsapp.com/send/?phone=522224734165&text=Hola+me+gustar%C3%ADa+comprar+o+reservar+el+boleto+Oro+&type=phone_number&app_absent=0" class="site-button white">Comprar boleto</a>
 							</div>
 						</div>
 					</div>
@@ -285,7 +287,7 @@
 										<li><i class="fa fa-check"></i> Acceso a la zona .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez. </li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button ">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="https://api.whatsapp.com/send/?phone=522224734165&text=Hola+me+gustar%C3%ADa+comprar+o+reservar+el+boleto+Oro+&type=phone_number&app_absent=0" class="site-button ">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>
@@ -302,7 +304,7 @@
 										<li><i class="fa fa-check"></i> Acceso a la zona  A .</li>
 										<li><i class="fa fa-check"></i> Foto Grupal con Pepe gutierrez </li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button ">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="https://api.whatsapp.com/send/?phone=522224734165&text=Hola+me+interesa+comprar%2Freservar+el+boleto+Platino+&type=phone_number&app_absent=0" class="site-button ">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>
@@ -320,7 +322,7 @@
 										<li><i class="fa fa-check"></i> Beauty Bag .</li>
 										<li><i class="fa fa-check"></i> Foto Personal con Pepe Guitierrez.</li>
 									</ul>
-									<div class="pricingtable-footer"> <a href="{{url('mantenimiento')}}" class="site-button">Comprar boleto</a> </div>
+									<div class="pricingtable-footer"> <a href="https://api.whatsapp.com/send/?phone=522224734165&text=Hola+me+interesa+comprar%2Freservar+el+boleto+Vip&type=phone_number&app_absent=0" class="site-button">Comprar boleto</a> </div>
 								</div>
 							</div>
 						</div>

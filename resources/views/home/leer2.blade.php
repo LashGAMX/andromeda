@@ -2,6 +2,10 @@
     @section('title')
     Nosotros
     @endsection
+    @section('head')
+        <script src="//widget.manychat.com/111985620932162.js" defer="defer"></script>
+        <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+    @endsection
 @section('content')
     <!-- Content -->
     <div class="page-content bg-white">

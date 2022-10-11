@@ -16,8 +16,8 @@ class BlogController extends Controller
             'post' => $post,
             'model' => $model,
         );
-        return redirect('mantenimiento');
-        // return view('blog.blog',$data);
+        // return redirect('mantenimiento');
+        return view('blog.blog',$data);
     }
     public function blogTemp()
     {
